@@ -1,0 +1,234 @@
+/* ------------ ######################################################### ----------- */
+/* 
+/* MEPIS 11.0 Quickstart Guide 
+/* STYLE SHEET 1.0
+/* copyleft 2011-03-03  by SilverBear
+/*
+/*
+/*
+/* 
+/* -- CSS template contents: ...................................... line 010   -- */
+/* -- 01: PAGE LEVEL FORMATS: ..................................... line 020   -- */
+/* -- 02: CONTENT TEXT FORMATS: ................................... line 050   -- */
+/* -- 03: ..........................: ............................. line 000   -- */
+/* -- 04: .........................: .............................. line 000   -- */
+/* -- GPL notice for this .css: ................................... line 000   -- */
+/* 
+/*
+
+/* ------- ******************* 01: PAGE LEVEL FORMATS ******************* --------- */  
+/* ----------------  determines characteristics of entire page ------------------ */  
+body {
+  font-family:  sans-serif;
+  font-size: 100%; 
+  text-align :center;
+  color : #000;
+  background-color: transparent;
+  background-image: url("grafx/bodybg.jpg");
+  background-attachment: fixed;
+  
+}
+#content {  
+  margin: auto ;
+  width:  1000px;
+	
+  font-family:  sans-serif;
+  font-size: 100%; 
+  text-align : center;
+
+  background-color: #fff;
+  color : #000;
+}
+/* ------- ################### END PAGE LEVEL FORMATS ################### --------- */  
+/*  */ 
+/*  */ 
+/*  */ 
+/*  */ 
+/*  */ 
+/*  */ 
+/*  */ 
+/*  */ 
+/*  */ 
+/*  */ 
+/*  */ 
+/*  */ 
+/*  */ 
+/* ------- ################## 02: CONTENT TEXT FORMATS ################## --------- */ 
+/* -------determines style of elements in the text column --------- */
+/* ------------ for headline formatting-------------- */ 
+h1,h2,h3,h4,h5,h6 {
+	font-weight : bold;
+	font-family : "Verdana", "Bitstream Vera Sans", "Arial","Helvetica", sans-serif; 
+	margin-top: 0px ; /* this must be 0 to fix a firefox css issue with this layout */
+	color:#000;
+	margin: 0px 0px 6px 0px;
+	padding: 0px 0px 3px 0px;
+}
+h1 {
+    margin-bottom : 16px;
+	margin-left : 0px;
+	margin-right: 0px;
+	font-size : 24px;
+	line-height:  28px;
+	text-align: center;
+	background-color: navy;
+	color: white;
+}
+h2 {
+	margin-bottom : 14px;
+	font-size : 20px;
+	text-align : left;
+	padding: 0px 0px 0px 24px;
+	background-color: navy;
+	color: white;
+}
+h3 {
+    padding: 0px 0px 0px 24px;
+	font-size : 16px;
+	text-align : left;
+	color: navy;
+}
+h4 {
+	font-size : 12px;
+	text-align : left;
+}
+h4.table {
+	font-size : 12px;
+	text-align : left;
+    color : #039;
+}
+h5 {
+	font-size : 14px;
+	text-align : left;
+}
+h6 {
+	font-size : 14px;
+	text-align : center;
+}
+/* ------------ end headline formatting-------------- */ 
+
+/* ------------ for paragraph formatting-------------- */ 
+p {
+font : normal normal 14px "Verdana","Bitstream Vera Sans",  "Arial","Helvetica", sans-serif; 
+text-align : justify; 
+text-indent : 0; 
+margin : 16px 0px 16px 0px;
+padding : 0px 30px 0px 30px;
+line-height : 16px; 
+}   
+p.fl {
+font : normal normal 14px "Verdana","Bitstream Vera Sans",  "Arial","Helvetica", sans-serif; 
+text-align : left; 
+text-indent : 0; 
+margin : 0px 16px 0px 0px;
+line-height : 16px; 
+} 
+p.flind {
+font : normal normal 14px "Verdana","Bitstream Vera Sans",  "Arial","Helvetica", sans-serif; 
+text-align : left; 
+text-indent : 0; 
+margin : 0 14px 0 42px; 
+line-height : 16px; 
+} 
+p.r {
+display: block;
+float: right;
+clear: both;
+font : normal normal 14px "Verdana","Bitstream Vera Sans",  "Arial","Helvetica", sans-serif; 
+text-indent : 0; 
+margin : 0px 72px 0px 0px; 
+line-height : 16px; 
+} 
+/* ------------ for preformatted text: CLI etc.-------------- */ 
+pre {
+font-family : monospace; 
+font-size : 12px;
+text-align: left;
+background-color: #eeeeff;
+border:1px solid #888;
+line-height : 14px; 	
+margin-left : 14px; 
+margin-right : 28px; 
+margin-top : 8px; 
+margin-bottom : 14px;
+padding : 14px 14px 14px 28px;
+ }
+/* ------------ *** for text formatting special FX -------------- */ 
+span.red {
+	color : #aa0000;
+	font-weight: normal;
+}
+span.bred {
+	color : #aa0000;
+	font-weight: bold;
+	}
+span.navy {
+color: navy;
+
+	font-weight: normal;
+}
+span.bnavy {
+color: navy;
+	font-weight: bold;
+	}
+/* ------------ *** end text formatting special FX -------------- */ 
+
+/* ------- ################## 02: ELEMENT CLASS FORMATS ################## --------- */ 
+
+.fr {
+display: block;
+float: right;
+clear: both;
+font : normal normal 14px "Verdana","Bitstream Vera Sans",  "Arial","Helvetica", sans-serif; 
+text-indent : 0; 
+padding : 0px 30px 0px 30px; 
+line-height : 16px; 
+} 
+.fl {
+float: left;
+text-align : left; 
+text-indent : 0; 
+padding : 0px 30px 0px 30px;
+
+} 
+
+
+ol li {
+font : normal normal 14px "Verdana","Bitstream Vera Sans",  "Arial","Helvetica", sans-serif; 
+text-align : left; 
+text-indent : 0; 
+margin : 0px 14px 0px 14px; 
+line-height : 16px; 
+}
+/* ------------ end text column ordered lists -------------- */ 
+/* ------------ for text column unordered lists -------------- */ 
+ul li {
+font : normal normal 14px "Verdana","Bitstream Vera Sans",  "Arial","Helvetica", sans-serif; 
+text-align : left; 
+text-indent : 0; 
+margin : 0px 20px 5px 0px; 
+padding : 0px 0px 0px 0px;
+line-height : 16px; 
+}
+/* ------------ end text column unordered lists -------------- */ 
+
+
+image.fl {
+float: left;
+margin : 0px 0px 0px 0px;
+padding : 0px 20px 0px 0px;
+} 
+image.fl2 {
+float: left;
+text-align : left; 
+text-indent : 0; 
+margin : 30px 0px 0px 0px;
+padding : 0px 20px 0px 0px;
+} 
+
+image.fr {
+float: right;
+margin : 20px 0px 0px 20px;
+padding : 0px 0px 0px 40px;
+
+} 
